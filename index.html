@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nic's Portfolio 2023</title>
+    <title>Nicholas Chu</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +14,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/84aad30eac.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -22,22 +23,24 @@
 <body>
     <div class="cursor"></div>
     <header class="border-bottom">
-        <div class="navbar width90 flex-container">
-            <div class="logo link">
-                <a href="index.html">Nicholas <br>Chu</a>
-            </div>
-            <nav class="flex-container">
-                <div class="mobile-menu-overlay">
-                    <ul class="links" data-visible="false">
-                        <li class="link"><a href="#work"><i class="fa-solid fa-arrow-right"></i>Work</a></li>
-                        <li class="link"><a href="#about"><i class="fa-solid fa-arrow-right"></i>About</a></li>
-                        <li class="link"><a href="#contact"><i class="fa-solid fa-arrow-right"></i>Contact</a></li>
-                    </ul>
+        <div class="navbar flex-container">
+            <div class="sticky-div">
+                <div class="logo link">
+                    <a href="index.html">Nicholas <br>Chu</a>
                 </div>
-                <a href="#" class="hamburger-wrapper">
-                    <div class="hamburger-menu"></div>
-                </a>
-            </nav>
+                <nav class="flex-container">
+                    <div class="mobile-menu-overlay">
+                        <ul class="links" data-visible="false">
+                            <li class="link"><a href="#work"><i class="fa-solid fa-arrow-right"></i>Work</a></li>
+                            <li class="link"><a href="#about"><i class="fa-solid fa-arrow-right"></i>About</a></li>
+                            <li class="link"><a href="#contact"><i class="fa-solid fa-arrow-right"></i>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="hamburger-wrapper">
+                        <div class="hamburger-menu"></div>
+                    </a>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -48,8 +51,9 @@
             <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">A former chef, Nicholas (they/them) uses
                 their sensibilities from the kitchen and attunement for customer
                 experience to connect users and businesses by creating websites that are accessible and easy to use.</p>
-            <img src="assets/dino-logo.png" alt="" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
-            <div class="radial-gradient"></div>
+            <img src="assets/nicsdino.svg" alt="" class="animate__animated animate__fadeInUp">
+            <img class="intro-gradient" src="assets/intro_gradient.svg" alt="">
+            <!-- <div class="radial-gradient"></div> -->
         </div>
     </section>
 
@@ -59,12 +63,11 @@
             <div class="grid-container">
                 <div class="project-card" data-aos="fade-up" data-aos-duration="1500">
                     <div class="container">
-                        <img src="assets/work1.png" alt="">
-                        <div class="overlay"></div>
+                        <img src="assets/mockup/mosuke/mosuke_01.jpg" alt="">
                     </div>
                     <div class="flex-container">
                         <h1>MoSuke</h1>
-                        <a href="mosuke.html" class="button hover-btn-animation">Dive Deeper</a>
+                        <a href="html/mosuke.html" class="button hover-btn-animation link">Dive Deeper</a>
                     </div>
                     <p data-aos="fade-up" data-aos-duration="1500">Few restaurants featuring West African ingredients
                         earn a Michelin star. Headed
@@ -74,12 +77,11 @@
                 </div>
                 <div class="project-card" data-aos="fade-up" data-aos-duration="1500">
                     <div class="container">
-                        <img src="assets/work2.png" alt="">
-                        <div class="overlay"></div>
+                        <img src="assets/mockup/erin hupp/erinhupp.jpg" alt="">
                     </div>
                     <div class="flex-container">
                         <h1>Erin Hupp</h1>
-                        <a href="erinhupp.html" class="button hover-btn-animation">Dive Deeper</a>
+                        <a href="html/erinhupp.html" class="button hover-btn-animation link">Dive Deeper</a>
                     </div>
                     <p data-aos="fade-up" data-aos-duration="1500">Ceramic artist Erin Hupp collaborates with fine
                         dining restaurants to create bespoke
@@ -89,12 +91,11 @@
                 </div>
                 <div class="project-card" data-aos="fade-up" data-aos-duration="1500">
                     <div class="container">
-                        <img src="assets/work3.png" alt="">
-                        <div class="overlay"></div>
+                        <img src="assets/mockup/moirai/moirai_01.jpg" alt="">
                     </div>
                     <div class="flex-container">
                         <h1>Moirai</h1>
-                        <a href="moirai.html" class="button hover-btn-animation">Dive Deeper</a>
+                        <a href="html/moirai.html" class="button hover-btn-animation link">Dive Deeper</a>
                     </div>
                     <p data-aos="fade-up" data-aos-duration="1500">A luxury-comfort lifestyle brand that values design
                         and craftsmanship to elevate our
@@ -113,7 +114,8 @@
             </div>
             <div class="col-right" data-aos="fade-up" data-aos-duration="1500">
                 <p class="p1">I am a self-taught web developer and former chef with a
-                    background working in some of Canada's finest restaurants. Now after working in the kitchen industry for
+                    background working in some of Canada's finest restaurants. Now after working in the kitchen industry
+                    for
                     several years, I am looking for a
                     change.</p>
                 <p>The structured environment of the kitchen
@@ -129,11 +131,12 @@
 
     <footer id="contact">
         <div class="width90 padding-top-btm">
-            <div class="section-header">
-                <h3>Contact</h3>
-            </div>
-            <p>Let's collaborate together. Please find me on:</p>
-            <h1>nicholasczx@gmail.com / <a class="link" href="https://www.linkedin.com/in/nictaylor27/">linkedin</a> </h1>
+            <h3 class="section-header">Contact <br>Me</h3>
+            <p>I’m currently looking for new opportunities. Let’s collaborate together! Please connect with me through:
+            </p>
+            <h1><img src="assets/nicsdino_light.svg" alt=""> <a class="link"
+                    href="mailto: nicholasczx@gmail.com?subject=Let's work together!">email</a> / <a class="link"
+                    href="https://www.linkedin.com/in/nictaylor27/">linkedin</a> </h1>
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
